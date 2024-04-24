@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/dp_135"
+            android:layout_height="@dimen/dp_135"
+            android:layout_marginTop="@dimen/dp_40"
+            android:elevation="@dimen/dp_10"
+            android:background="@drawable/shadow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/app_icon"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_16"
+            android:text="@string/welcome_to"
+            android:textColor="@color/main_icons_area_color"
+            android:textSize="@dimen/sp_25"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_min_6"
+            android:text="@string/app_name"
+            android:textColor="@color/header_text_color"
+            android:textSize="@dimen/sp_35"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_300"
+            android:background="@drawable/main_icons_area"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_40"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.473"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/lengthBtn"
+                        style="@style/main_btn_ll">
+
+                        <RelativeLayout
+                            style="@style/main_btn_rl">
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:layout_width="@dimen/dp_80"
+                                android:layout_height="@dimen/dp_80"
+                                app:lottie_rawRes="@raw/length"
+                                app:lottie_loop="true"
+                                app:lottie_autoPlay="true"/>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:text="@string/length"
+                            style="@style/main_btn_textV"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/areaBtn"
+                        style="@style/main_btn_ll">
+
+                        <RelativeLayout
+                            style="@style/main_btn_rl">
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:layout_width="@dimen/dp_80"
+                                android:layout_height="@dimen/dp_80"
+                                app:lottie_rawRes="@raw/area"
+                                app:lottie_loop="true"
+                                app:lottie_autoPlay="true"/>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:text="@string/area"
+                            style="@style/main_btn_textV" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/volumeBtn"
+                        style="@style/main_btn_ll">
+
+                        <LinearLayout
+                            style="@style/main_btn_rl">
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:layout_width="@dimen/dp_100"
+                                android:layout_height="@dimen/dp_150"
+                                app:lottie_rawRes="@raw/volume"
+                                app:lottie_loop="true"
+                                app:lottie_autoPlay="true"
+                                android:layout_marginTop="@dimen/dp_min_42"
+                                android:layout_marginStart="@dimen/dp_min_23"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/volume"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/sp_20"
+                            android:textStyle="bold"
+                            android:textColor="@color/def" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/weighttBtn"
+                        style="@style/main_btn_ll">
+
+                        <RelativeLayout
+                            style="@style/main_btn_rl">
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:layout_width="@dimen/dp_80"
+                                android:layout_height="@dimen/dp_80"
+                                app:lottie_rawRes="@raw/weigth"
+                                app:lottie_loop="true"
+                                app:lottie_autoPlay="true"/>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:text="@string/weight"
+                            style="@style/main_btn_textV" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tempBtn"
+                        style="@style/main_btn_ll">
+
+                        <RelativeLayout
+                            style="@style/main_btn_rl">
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:layout_width="@dimen/dp_80"
+                                android:layout_height="@dimen/dp_80"
+                                app:lottie_rawRes="@raw/temp"
+                                app:lottie_loop="true"
+                                app:lottie_autoPlay="true"/>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:text="@string/temp"
+                            style="@style/main_btn_textV" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/speedBtn"
+                        style="@style/main_btn_ll">
+
+                        <RelativeLayout
+                            style="@style/main_btn_rl">
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:layout_width="@dimen/dp_80"
+                                android:layout_height="@dimen/dp_80"
+                                app:lottie_rawRes="@raw/speed"
+                                app:lottie_loop="true"
+                                app:lottie_autoPlay="true"/>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:text="@string/speed"
+                            style="@style/main_btn_textV"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/currencyBtn"
+                        style="@style/main_btn_ll">
+
+                        <RelativeLayout
+                            style="@style/main_btn_rl">
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:layout_width="@dimen/dp_80"
+                                android:layout_height="@dimen/dp_80"
+                                app:lottie_rawRes="@raw/currancy"
+                                app:lottie_loop="true"
+                                app:lottie_autoPlay="true"/>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:text="@string/currency"
+                            android:textSize="@dimen/sp_19"
+                            style="@style/main_btn_textV" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/powerBtn"
+                        style="@style/main_btn_ll">
+
+                        <RelativeLayout
+                            style="@style/main_btn_rl">
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:layout_width="@dimen/dp_80"
+                                android:layout_height="@dimen/dp_80"
+                                app:lottie_rawRes="@raw/power"
+                                app:lottie_loop="true"
+                                app:lottie_autoPlay="true"/>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:text="@string/power"
+                            style="@style/main_btn_textV" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/pressureBtn"
+                        style="@style/main_btn_ll">
+
+                        <RelativeLayout
+                            style="@style/main_btn_rl">
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:layout_width="@dimen/dp_80"
+                                android:layout_height="@dimen/dp_80"
+                                app:lottie_rawRes="@raw/pressure"
+                                app:lottie_loop="true"
+                                app:lottie_autoPlay="true"/>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:text="@string/pressure"
+                            android:textSize="@dimen/sp_19"
+                            style="@style/main_btn_textV" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:layout_marginBottom="@dimen/dp_50"
+                    android:layout_gravity="center"
+                    app:cardUseCompatPadding="true"
+                    app:cardElevation="@dimen/dp_20"
+                    app:cardBackgroundColor="#00F1FFFF">
+                    <LinearLayout
+                        android:layout_width="@dimen/dp_350"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/main_blue_redius_20_padding_10"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <com.airbnb.lottie.LottieAnimationView
+                                    android:layout_width="@dimen/dp_120"
+                                    android:layout_height="@dimen/dp_120"
+                                    app:lottie_autoPlay="true"
+                                    app:lottie_loop="true"
+                                    app:lottie_rawRes="@raw/developer" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/main_info_btn"
+                                android:layout_width="@dimen/dp_30"
+                                android:layout_height="@dimen/dp_30"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="@dimen/dp_1"
+                                android:layout_marginEnd="@dimen/dp_0"
+                                android:elevation="@dimen/dp_10"
+                                app:srcCompat="@drawable/info_icon"
+                                android:contentDescription="@string/todo" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/developed_by"
+                            android:textColor="@color/main_icons_area_color"
+                            android:textSize="@dimen/sp_16" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/developer"
+                            android:textColor="@color/header_text_color"
+                            android:textSize="@dimen/sp_26" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dp_min_4"
+                        android:layout_marginBottom="@dimen/dp_45"
+                        android:text="@string/version"
+                        android:textColor="@color/def"
+                        android:textSize="@dimen/sp_12"
+                        android:textAlignment="center"
+                        android:textStyle="italic" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

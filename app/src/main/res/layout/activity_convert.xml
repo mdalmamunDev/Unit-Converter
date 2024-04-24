@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_icons_area_color">
+
+    <RelativeLayout
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_8"
+        android:background="@drawable/main_blue_light_dark_redius_250"
+        android:padding="@dimen/dp_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/back"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/info_btn"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginEnd="@dimen/dp_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/info_icon"
+        android:contentDescription="@string/todo" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="@dimen/dp_250"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_extra_redius"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_2"
+        android:paddingBottom="@dimen/dp_6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/activity_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/main_icons_area_color"
+            android:textSize="@dimen/sp_24"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_50"
+        android:layout_marginBottom="@dimen/dp_236"
+        android:background="@drawable/main_blue_light_10dp_redius"
+        android:paddingRight="@dimen/dp_10"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+
+        <Spinner
+            android:id="@+id/spinner_1"
+            android:layout_width="@dimen/dp_130"
+            android:layout_height="@dimen/dp_50"
+            android:background="@drawable/spinner_bg_1"
+            android:dropDownVerticalOffset="@dimen/dp_10"
+            android:popupBackground="@drawable/main_blue_redius_20_padding_10"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/input_top"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="@dimen/dp_45"
+            android:layout_weight="1"
+            android:paddingTop="@dimen/dp_10"
+            android:text="@string/_0"
+            android:textAlignment="textEnd"
+            android:textColor="#2196F3"
+            android:textSize="@dimen/sp_20" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_80"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/arrows"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_blue_light_10dp_redius"
+        android:paddingRight="@dimen/dp_10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+
+        <Spinner
+            android:id="@+id/spinner_2"
+            android:layout_width="@dimen/dp_130"
+            android:layout_height="@dimen/dp_50"
+            android:background="@drawable/spinner_bg_1"
+            android:dropDownVerticalOffset="@dimen/dp_10"
+            android:popupBackground="@drawable/main_blue_redius_20_padding_10"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/input_bottom"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="@dimen/dp_45"
+            android:layout_weight="1"
+            android:paddingTop="@dimen/dp_10"
+            android:text="@string/_0"
+            android:textAlignment="textEnd"
+            android:textColor="@color/def"
+            android:textSize="@dimen/sp_20" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_350"
+        android:layout_marginBottom="@dimen/dp_4"
+        android:background="@color/main_blue_light"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dp_20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+
+            <Button
+                android:id="@+id/numBtn_7"
+                android:text="7"
+                style="@style/key_pad_btn" />
+
+            <Button
+                android:id="@+id/numBtn_8"
+                android:text="8"
+                style="@style/key_pad_btn"/>
+
+            <Button
+                android:id="@+id/numBtn_9"
+                android:text="9"
+                style="@style/key_pad_btn"/>
+
+            <Button
+                android:id="@+id/numBtn_C"
+                android:text="C"
+                style="@style/key_pad_btn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+
+            <Button
+                android:id="@+id/numBtn_4"
+                android:text="4"
+                style="@style/key_pad_btn" />
+
+            <Button
+                android:id="@+id/numBtn_5"
+                android:text="5"
+                style="@style/key_pad_btn" />
+
+            <Button
+                android:id="@+id/numBtn_6"
+                android:text="6"
+                style="@style/key_pad_btn" />
+
+            <Button
+                android:id="@+id/numBtn_cross"
+                android:text="X"
+                style="@style/key_pad_btn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+
+            <Button
+                android:id="@+id/numBtn_1"
+                android:text="1"
+                style="@style/key_pad_btn" />
+
+            <Button
+                android:id="@+id/numBtn_2"
+                android:text="2"
+                style="@style/key_pad_btn" />
+
+            <Button
+                android:id="@+id/numBtn_3"
+                android:text="3"
+                style="@style/key_pad_btn" />
+
+            <Button
+                android:id="@+id/numBtnEMinus"
+                android:text="E-"
+                style="@style/key_pad_btn"
+                android:textColor="#2196F3"
+                android:textSize="@dimen/sp_35" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+
+            <Button
+                android:id="@+id/numBtn_00"
+                android:text="00"
+                style="@style/key_pad_btn"
+                android:textSize="@dimen/sp_35" />
+
+            <Button
+                android:id="@+id/numBtn_0"
+                android:text="0"
+                style="@style/key_pad_btn" />
+
+            <Button
+                android:id="@+id/numBtn_dot"
+                android:text="."
+                style="@style/key_pad_btn" />
+
+            <Button
+                android:id="@+id/numBtn_E"
+                android:text="E"
+                style="@style/key_pad_btn"
+                android:textColor="#2196F3"
+                android:textSize="@dimen/sp_35" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

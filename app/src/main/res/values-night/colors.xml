@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="btn_numeric">#CDFFFFFF</color>
+    <color name="click_hvr">#17FFFFFF</color>
+    <color name="def">#CACACA</color>
+
+    <color name="header_text_color">#FFEB3B</color>
+    <color name="main_icons_area_color">#000A0E</color>
+    <color name="main_blue_light">#00293C</color>
+    <color name="main_icons_area_color_dark_trans">#00354E</color>
+</resources>

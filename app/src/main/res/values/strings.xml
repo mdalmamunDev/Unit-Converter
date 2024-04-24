@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Unit Converter</string>
+    <string name="version">Version: v3.0.3</string>
+
+    <string name="_0">0</string>
+    <string name="developer">Md. Al Mamun</string>
+    <string name="developed_by">Developed by</string>
+    <string name="length">Length</string>
+    <string name="area">Area</string>
+    <string name="volume">Volume</string>
+    <string name="weight">Weight</string>
+    <string name="temp">Temp</string>
+    <string name="speed">Speed</string>
+    <string name="title_activity_information">Information</string>
+    <string name="about_app">
+Hi! I am Md. Al Mamun son of Md. Ab. Mannan and Miss. Aktar Banu. I am from Bangladesh, city Naogaon.And I am 20 years old. Now I am studying in Diploma in Engineering College TMSS Institute of Scienceand ICT, Bogura, Bangladesh. I am doing diploma in computer science. I learned web-design, web-development. Also I know many programming languages like python, java, c, c++, c#, php, javascript etc. And I am constantly learning with the help of Allah. I love my work very much. For me, my work is my main passion. I always want to learn something new. That\'s why I always beat myself up so that I can always improve. I am a skilled and well-educated programmer. I am always ready for that.
+(For more information visit my website)
+    </string>
+    <string name="visit_my_website">Visit my website</string>
+    <string name="currency">Currency</string>
+    <string name="power">Power</string>
+    <string name="pressure">Pressure</string>
+    <string name="exit_msg">Are sure to Exit?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="this_is_custom_toast">This is Custom Toast</string>
+    <string name="about">About</string>
+    <string name="todo">TODO</string>
+    <string name="welcome_to">Welcome To</string>
+    <string name="header_image">Header Image</string>
+    <string name="header_sub_title">Let\'s convert anything</string>
+    <string name="open_drawer">Opening Drawer</string>
+    <string name="close_drawer">Closing Drawer</string>
+    <string name="home">Home</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="exit">Exit</string>
+    <string name="about_us">About Us</string>
+</resources>
